@@ -3,16 +3,7 @@ import { stdin as input, stdout as output } from 'node:process';
 const userInput = readline.createInterface({ input, output });
 
 let naam;
-let studentenLijst = [];
-
-do{
-    naam = await userInput.question("Geef een naam: ")
-    if(naam == ""){
-    }
-    else{
-        studentenLijst.push(naam);    
-    }
-}while(naam != "")
+let studentenLijst = ["Kim", "Ludger", "Damian"];
 
 for(let a = 0; a < studentenLijst.length; a++){
     console.log(studentenLijst[a] + " je bent uitgenoding voor de leukste vak Programming Fundamentals" );
